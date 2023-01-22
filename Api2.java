@@ -1,6 +1,28 @@
 package apiGson;
 
 public class Api2 {
+	int id;
+
+	String status;
+	String copyright;
+	String section;
+	String last_updated;
+	int num_results;
+	results []results;
+	response response;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public response getResponse() {
+		return response;
+	}
+	public void setResponse(response response) {
+		this.response = response;
+	}
 	public String getStatus() {
 		return status;
 	}
@@ -37,10 +59,5 @@ public class Api2 {
 	public void setResults(results[] results) {
 		this.results = results;
 	}
-	String status;
-	String copyright;
-	String section;
-	String last_updated;
-	int num_results;
-	results []results;
+	
 }
