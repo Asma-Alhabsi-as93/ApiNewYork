@@ -24,7 +24,7 @@ public class OthureServer {
 //			for (int i=0;i<response.body().length();i++) {
 			
 		System.out.println("**********************************");
-		System.out.println("id is" + apiResults.getId());
+		System.out.println("id is:" + apiResults.getId());
 		System.out.println("book_author is" + apiResults.getResults()[0].getBook_author());
 	
 	}
@@ -40,11 +40,11 @@ public class OthureServer {
 		Gson gson = new Gson();
 		Api2 apiResults = gson.fromJson(response.body(), Api2.class);
 		
-//			for (int i=0;i<response.body().length();i++) {
+//			for (int i=0;i<apiResults.getResults().length();i++) {
 			
 		System.out.println("**********************************");
-		System.out.println("id is" + apiResults.getId());
-		System.out.println("book_author is" + apiResults.getResults()[0].getBook_author());
+		System.out.println("id is:" + apiResults.getResults()[0].getId());
+		System.out.println("book_author is:" + apiResults.getResults()[0].getBook_author());
 	
 		String sqlInsert = "insert into section(id,book_author)"
 				+ " values(" + apiResults.getResults()[0].getId() + ",'"+apiResults.getResults()[0].getBook_author()+"')";

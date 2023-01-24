@@ -31,6 +31,7 @@ public class newYourk {
 			switch (select) {
 			case 1:
 				ArticalServer.fetchArical();
+				
 				break;
 			case 2:
 				SectionServer.fetchSection();
@@ -55,6 +56,9 @@ public class newYourk {
 				break;
 			case 8:
 				ArticalServer.addColum2();
+				break;
+			case 9:
+				ArticalServer.prepareStatment();
 				break;
 
 			}

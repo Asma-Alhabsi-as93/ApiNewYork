@@ -13,7 +13,8 @@ public static List<String> getMenuArray(){
 			"5:insert Artical ",
 			"6:insert Authors ",
 			"7:Add Colum Section_Id",
-			"8:Add Colum Outher_Id");
+			"8:Add Colum Outher_Id",
+			"9:use prepare Statment");
 	return menueItemList;
 }
 public static String URL_NYT_API_SECTION ="https://api.nytimes.com/svc/topstories/v2/books.json?";
